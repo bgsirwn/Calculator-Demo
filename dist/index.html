@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Basic Calculator</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <!-- Right panel with cover effect-->
+    <!-- Views-->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class-->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+                <!-- Page, data-page contains page name-->
+                <div data-page="index" class="page">
+
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+
+                        <div class="content-block">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <div class="content-block">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-input">
+                                                        <input type="text" id="txtInput">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <div class="content-block">
+                                <div class="row">
+                                    <div class="clear col-50 button button-big button-fill color-orange ripple-green">C</div>
+                                    <div class="backspace col-25 button button-big button-fill color-orange ripple-green">&lt</div>
+                                    <div class="divide col-25 button button-big button-fill color-orange ripple-green">/</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="row">
+                                    <div class="seven col-auto button button-big button-fill color-orange ripple-green">7</div>
+                                    <div class="eight col-auto button button-big button-fill color-orange ripple-green">8</div>
+                                    <div class="nine col-auto button button-big button-fill color-orange ripple-green">9</div>
+                                    <div class="letterx col-auto button button-big button-fill color-orange ripple-green">X</div>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="row">
+                                    <div class="four col-auto button button-big button-fill color-orange ripple-green">4</div>
+                                    <div class="five col-auto button button-big button-fill color-orange ripple-green">5</div>
+                                    <div class="six col-auto button button-big button-fill color-orange ripple-green">6</div>
+                                    <div class="minus col-auto button button-big button-fill color-orange ripple-green">-</div>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="row">
+                                    <div class="one col-auto button button-big button-fill color-orange ripple-green">1</div>
+                                    <div class="two col-auto button button-big button-fill color-orange ripple-green">2</div>
+                                    <div class="three col-auto button button-big button-fill color-orange ripple-green">3</div>
+                                    <div class="plus col-auto button button-big button-fill color-orange ripple-green">+</div>
+                                </div>
+                            </div>
+                            <div class="content-block">
+                                <div class="row">
+                                    <div class="plus_minus col-auto button button-big button-fill color-orange ripple-green">+/-</div>
+                                    <div class="zero col-auto button button-big button-fill color-orange ripple-green">0</div>
+                                    <div class="dot col-auto button button-big button-fill color-orange ripple-green">.</div>
+                                    <div class="equal col-auto button button-big button-fill color-orange ripple-green">=</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-innerr" style="text-align: center;">
+                    <p>HTML5 Calculator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
